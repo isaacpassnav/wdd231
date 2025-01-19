@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +9,20 @@
     <meta property="og:url" content="https://isaacpassnav.github.io/wdd231/">
     <meta property="og:type" content="Website">
     <meta property="og:title" content="Chamber Directory Page">
-    <meta property="og:description"
-        content="A directory of businesses and organizations for the Chamber of Commerce project.">
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/isaacpassnav/wdd231/refs/heads/main/images/isaac-pasapera.webp">
+    <meta property="og:description" content="A directory of businesses and organizations for the Chamber of Commerce project.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/isaacpassnav/wdd231/refs/heads/main/images/isaac-pasapera.webp">
     <link rel="icon" href="images/favicon_isaac.ico">
     <!-- fuente para parafos y textos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- fuente para titulos y subtitulos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/getTime.js" defer></script>
 </head>
 <body>
@@ -34,11 +30,12 @@
         <div class="header-container">
             <div class="header-img">
                 <a href="directory.html">
-                    <img  src="images/chamber-commerse.webp" width="90" alt="chamber-img" style="cursor: pointer;">
+                    <img src="images/chamber-commerse.webp" width="90" alt="chamber-img" style="cursor: pointer;">
                 </a>
                 <h2>Piura</h2>
                 <p>Chamber of Commerce</p>
             </div>
+            <button id="menu"></button>
             <nav class="nav">
                 <ul class="nav-ul">
                     <li><a href="#">Home</a></li>
@@ -47,22 +44,20 @@
                     <li><a href="#">Join</a></li>
                 </ul>
             </nav>
-        </div>    
-    </header>
+        </div>
+    </header>   
 <hr>    
     <main>
-        <h2>Member Directory</h2>
-        <div id="directory-view-options">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
-        </div>
-        <section id="members" class="grid">
-            <div class="member-card">
-                <img src="images/example-business.jpg" alt="Business Name">
-                <h3>Business Name</h3>
-                <p>Business description or tagline goes here.</p>
+        <section>
+            <h2>Member Directory</h2>
+            <div class="view-options">
+              <button id="grid-view" class="active">Grid View</button>
+              <button id="list-view">List View</button>
             </div>
-        </section>
+            <div id="members" class="grid">
+              <!-- Aquí se generarán los miembros dinámicamente con JavaScript -->
+            </div>
+          </section>
     </main><br>
 <hr>
     <footer class="footer">
@@ -94,7 +89,7 @@
                 </p>
                 <p id="lastModified"></p>
             </div>
-        </div>
+        </div>  
     </footer>
 </body>
 </html>

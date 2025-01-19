@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Golden Gate Tech",
+      "address": "123 Golden Gate Ave, San Francisco, CA",
+      "phone": "+1 (555) 123-9876",
+      "website": "https://goldengatetech.com",
+      "image": "images/golden_gate_tech.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Silver Linings Consulting",
+      "address": "456 Silver Street, Denver, CO",
+      "phone": "+1 (555) 234-5678",
+      "website": "https://silverlinings.com",
+      "image": "images/silver_linings.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "Fresh Start Organics",
+      "address": "789 Fresh Road, Austin, TX",
+      "phone": "+1 (555) 345-6789",
+      "website": "https://freshstart.com",
+      "image": "images/fresh_start.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "Elite Marketing Group",
+      "address": "101 Elite Way, Seattle, WA",
+      "phone": "+1 (555) 456-7890",
+      "website": "https://elitemarketing.com",
+      "image": "images/elite_marketing.jpg",
+      "membership_level": 3
+    },
+    {
+      "name": "Green Energy Solutions",
+      "address": "202 Green Blvd, Portland, OR",
+      "phone": "+1 (555) 567-8901",
+      "website": "https://greenenergy.com",
+      "image": "images/green_energy.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "Blue Horizon Travels",
+      "address": "303 Blue Horizon Lane, Miami, FL",
+      "phone": "+1 (555) 678-9012",
+      "website": "https://bluehorizon.com",
+      "image": "images/blue_horizon.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "NextGen Software",
+      "address": "404 NextGen St, Boston, MA",
+      "phone": "+1 (555) 789-0123",
+      "website": "https://nextgensoftware.com",
+      "image": "images/nextgen_software.jpg",
+      "membership_level": 3
+    }
+  ]
+  
