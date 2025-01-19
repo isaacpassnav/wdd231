@@ -193,28 +193,6 @@ footer p {
 .nav-social-media img {
     padding: 5px;
 }
-/* @media screen and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-}
-@media only screen and ( min-width: 40em ) {
-    h1 {
-        font-size: 2rem;
-        margin: 1rem;
-    }
-    .nav{
-        display: flex;
-    }
-    .nav a {
-        display: block;
-        flex: 1 1 100%;
-    }
-    #menu {
-        display: none;
-    }
-} */
 @media screen and (max-width: 768px) {
     .nav {
         display: none; 
