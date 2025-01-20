@@ -4,16 +4,6 @@
         align-items: center;
         text-align: center;
     }
-    .header-img {
-        display: flex;
-    }
-    .header-img h1{
-        order: 1;
-        margin-bottom: 10px;
-    }
-    .header-img p{
-        order: 2;
-    }
     .nav{
         display: none;
         flex-direction: column; 
@@ -39,7 +29,6 @@
         position: relative;
         padding: 10px;
         border-radius: 5px; 
-        padding-right: 250px;
     }
     body {
         margin: 0;
