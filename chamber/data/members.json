@@ -4,7 +4,7 @@
     "address": "123 Golden Gate Ave, San Francisco, CA",
     "phone": "+1 (555) 123-9876",
     "website": "https://goldengatetech.com",
-    "image": "/chamber/images/tech.png",
+    "image": "../images/tech.png",
     "membership_level": 3
   },
   {
