@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             )
             .join("");
     }
-
     function renderListView(members) {
         membersContainer.classList.remove("grid");
         membersContainer.classList.add("list");
