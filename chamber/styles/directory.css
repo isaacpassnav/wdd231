@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .header-img p {
     margin: 0;
+    padding-top: 10px;
 }
 .nav {
     display: flex;
@@ -79,9 +80,129 @@ h1,h2,h3,h4,h5,h6 {
 #menu.show::before {
     content: "X";
 }
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Suavizar el cambio */
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: 420px;
+    
+}
+.carousel-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.carousel-images img {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del carrusel */
+    max-width: 100%; /* Evitar que excedan el tamaño del contenedor */
+    height: 100%; /* Ajusta la altura al contenedor */
+    object-fit: cover; /* Cubre todo el espacio sin distorsión */
+}
+/* Controles */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5%;
+
+}
+.carousel-control.prev {
+    left: 10px;
+}
+.carousel-control.next {
+    right: 10px;
+}
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 /* trabajando con main section*/
 main {
     padding: 20px;
+}
+/* Sección de eventos */
+.events {
+    background: linear-gradient(to right, #0066cc, #004999); 
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.events p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.btn-primary {
+    display: inline-block;
+    background: #ffcc00;
+    color: #004999;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background: #ff9900;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.information-grid {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    gap: 20px; /* Espaciado entre los divs */
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.info-events {
+    flex: 2; /* Ocupa el doble de espacio comparado con los demás */
+    background: #f9f9f9; /* Fondo para destacar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-current-weather,
+.info-weather-forecast {
+    flex: 1; /* Ambas ocupan el mismo tamaño */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.information-grid h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 section h2{
     text-align: center;
@@ -216,5 +337,4 @@ section h2{
 }
 .nav-social-media a {
     display: inline-block;
-    
 }

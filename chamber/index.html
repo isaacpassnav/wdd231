@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Piura Chamber of Commerce. Join us today!">
+    <meta name="author" content="Isaac Pasapera">
+    <link rel="icon" href="/images/isaac-pasapera.webp">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/getTime.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-img">
+                <a href="index.html">
+                    <img src="images/chamber-commerse.webp" width="90" alt="chamber-img">
+                </a>
+                <h1>Perú</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu"></button>
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero  -->
+        <section class="hero">
+            <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/img01.webp" alt="Imagen 1" loading="lazy">
+                <img src="images/img02.webp" alt="Imagen 2" loading="lazy">
+                <img src="images/img03.webp" alt="Imagen 3" loading="lazy">
+            </div>
+            <button class="carousel-control prev" aria-label="imagen anterior">&lt;</button>
+            <button class="carousel-control next" aria-label="imagen siguiente">&gt;</button>
+            </div>
+        </section>         
+        <hr>
+        <!-- Call to action-->
+        <section class="events">
+            <div class="events-content">
+                <!-- <h2>Current Events</h2> -->
+                <p>Stay updated with the latest events in the community. Discover opportunities and engage with others in the region.</p>
+                <a href="#" class="btn-primary">Learn More</a>
+            </div>
+        </section>        
+
+        <!-- Current Events Section  -->
+        <section class="information-grid">
+            <div class="info-events">
+                <h2>Events</h2>
+            </div>
+            <div class="info-current-weather">
+                <h2>Current Weather in Perú</h2>
+                <div id="weather-container">
+                    <!-- JavaScript will inject weather data here -->
+                </div>
+            </div>
+            <div class="info-weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-container">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="grid">
+                <!-- JavaScript will inject spotlight members here -->
+            </div>
+        </section>
+    </main>
+    
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="first-seccion-footer">
+                <p><strong>Piura Chamber of Commerce</strong></p>
+                <p>10 Rue de la Paix</p>
+                <p>Piura, Castilla 989</p>
+                <p><a href="mailto:info@piurachambercommerce.org">info@piurachambercommerce.org</a></p>
+            </div>
+            <nav class="nav-social-media">
+                <div class="conteiner-social-media">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" width="30" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/i/flow/login">
+                        <img src="images/twitter.png" width="30" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram.png" width="30" alt="instagram">
+                    </a>
+                </div>
+            </nav>
+            <div class="personal-info-footer">
+                <p>wdd231 Class Project</p>               
+                <p>Isaac Pasapera</p>
+                <p>
+                    &copy; <span id="currentyear"></span> Piura Chamber of Commerce
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>
