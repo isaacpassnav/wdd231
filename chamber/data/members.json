@@ -20,7 +20,7 @@
     "address": "789 Fresh Road, Austin, TX",
     "phone": "+1 (555) 345-6789",
     "website": "https://freshstart.com",
-    "image": "/chamber/images/organic.png",
+    "image": "../images/organic.png",
     "membership_level": 1
   },
   {
@@ -28,7 +28,7 @@
     "address": "101 Elite Way, Seattle, WA",
     "phone": "+1 (555) 456-7890",
     "website": "https://elitemarketing.com",
-    "image": "/chamber/images/marketing.png",
+    "image": "../images/marketing.png",
     "membership_level": 3
   },
   {
@@ -36,7 +36,7 @@
     "address": "202 Green Blvd, Portland, OR",
     "phone": "+1 (555) 567-8901",
     "website": "https://greenenergy.com",
-    "image": "/chamber/images/energy.png",
+    "image": "/chamber/images/tech.png",
     "membership_level": 2
   },
   {
@@ -44,7 +44,7 @@
     "address": "303 Blue Horizon Lane, Miami, FL",
     "phone": "+1 (555) 678-9012",
     "website": "https://bluehorizon.com",
-    "image": "/chamber/images/images.jpg",
+    "image": "../images/images.jpg",
     "membership_level": 1
   },
   {
