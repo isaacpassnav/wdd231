@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             console.error("Error al obtener los miembros:", error);
             return [];
         }
-    }
-
+    };
     function renderGridView(members) {
         membersContainer.classList.remove("list");
         membersContainer.classList.add("grid");
@@ -46,10 +45,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             )
             .join("");
     }
-
-    const members = await fetchMembers();
-    renderGridView(members); 
-
-    gridViewButton.addEventListener("click", () => renderGridView(members));
-    listViewButton.addEventListener("click", () => renderListView(members));
+     // Obtener datos y renderizar la vista predeterminada
+     const members = await fetchMembers();
+     renderGridView(members);
+ 
+     // Agregar eventos para cambiar entre vistas
+     gridViewButton.addEventListener("click", () => renderGridView(members));
+     listViewButton.addEventListener("click", () => renderListView(members));
 });

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weatherApi.js"></script>
     <script src="scripts/getTime.js" defer></script>
     
 </head>
@@ -18,7 +20,7 @@
     <header>
         <div class="header-container">
             <div class="header-img">
-                <a href="index.html">
+                <a href="/chamber/index.html">
                     <img src="images/chamber-commerse.webp" width="90" alt="chamber-img">
                 </a>
                 <h1>Perú</h1>
@@ -54,7 +56,6 @@
         <!-- Call to action-->
         <section class="events">
             <div class="events-content">
-                <!-- <h2>Current Events</h2> -->
                 <p>Stay updated with the latest events in the community. Discover opportunities and engage with others in the region.</p>
                 <a href="#" class="btn-primary">Learn More</a>
             </div>
@@ -64,6 +65,7 @@
         <section class="information-grid">
             <div class="info-events">
                 <h2>Events</h2>
+                <p>Discover upcoming events in your community.</p>
             </div>
             <div class="info-current-weather">
                 <h2>Current Weather in Perú</h2>
@@ -78,11 +80,9 @@
                 </div>
             </div>
         </section>
-
-        <!-- Spotlight Section -->
         <section class="spotlights">
             <h2>Business Spotlights</h2>
-            <div id="spotlight-container" class="grid">
+            <div id="spotlight-container" class="spotlight-grid">
                 <!-- JavaScript will inject spotlight members here -->
             </div>
         </section>
