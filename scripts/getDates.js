@@ -17,5 +17,3 @@ if (mainNav && hamButton) {
     });
 }
 
-
-
