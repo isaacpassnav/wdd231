@@ -3,36 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory Page - wdd231</title>
-    <meta name="description" content="Chamber Directory Page to last project unto week07">
+    <title>Thank You</title>
+    <meta name="description" content="Thank you for joining the Chamber of Commerce.">
     <meta name="author" content="Isaac Pasapera">
-    <meta property="og:url" content="https://isaacpassnav.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Chamber Directory Page">
-    <meta property="og:description" content="A directory of businesses and organizations for the Chamber of Commerce project.">
-    <meta property="og:image" content="https://isaacpassnav.github.io/wdd231/chamber/directory.html">
-    <link rel="icon" href="/images/favicon_isaac.ico">
-    <!-- fuente para parafos y textos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- fuente para titulos y subtitulos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <script src="scripts/directory.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/thankyou.css">
     <script src="scripts/getTime.js" defer></script>
+    <script src="scripts/thankYou.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-img">
-                <a href="directory.html">
-                    <img src="images/chamber-commerse.webp" width="90" alt="chamber-img" >
+                <a href="/chamber/index.html">
+                    <img src="images/chamber-commerse.webp" width="90" alt="chamber-img">
                 </a>
-                <h1>Piura</h1>
+                <h1>Perú</h1>
                 <p>Chamber of Commerce</p>
             </div>
             <button id="menu"></button>
@@ -40,27 +26,21 @@
                 <ul class="nav-ul">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">Discover</a></li>
-                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="">Directory</a></li>
                     <li><a href="./join.html">Join</a></li>
                 </ul>
             </nav>
         </div>
-    </header>   
-<hr>    
-    <main>
-        <section>
-            <h2>Member Directory</h2>
-            <div class="view-options">
-              <button id="grid-view" class="active">Grid View</button>
-              <button id="list-view">List View</button>
-            </div>
-            <div id="members" class="grid">
-              <!-- Aquí se generarán los miembros dinámicamente con JavaScript -->
-            </div>
-        </section>
-    </main><br>
-    
-<hr>
+    </header>
+    </header>
+    <main class="thankyou-main">
+        <h2>Your Application Has Been Received</h2>
+        <div id="applicationDetails">
+            <!-- Los detalles de la aplicación se mostrarán aquí -->
+        </div>
+        <p>We will contact you shortly with more information. Thank you for joining the Chamber of Commerce!</p>
+    </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="first-seccion-footer">

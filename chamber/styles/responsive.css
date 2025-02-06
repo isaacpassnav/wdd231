@@ -82,4 +82,16 @@
     #members.grid {
         grid-template-columns: repeat(3, 1fr); 
     }
+    .join-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #joinForm {
+        flex: 1;
+        margin-right: 20px;
+    }
+    .membership-cards {
+        flex: 1;
+        margin-top: 0;
+    }
 }
