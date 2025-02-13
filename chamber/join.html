@@ -42,27 +42,21 @@
         <!-- Formulario de registro -->
         <form id="joinForm" action="thankyou.html" method="get">
             <h2>Application Form</h2>
-
             <!-- First Name -->
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name" required>
-
             <!-- Last Name -->
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name" required>
-
             <!-- Organizational Title -->
             <label for="orgTitle">Organizational Title:</label>
             <input type="text" id="orgTitle" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
-
             <!-- Email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@domain.com" required>
-
             <!-- Mobile Phone -->
             <label for="phone">Mobile Phone:</label>
             <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
-
             <!-- Business Name -->
             <label for="businessName">Business/Organization Name:</label>
             <input type="text" id="businessName" name="businessName" title="Enter your business/organization name" autocomplete="organization" required>
@@ -70,6 +64,7 @@
             <!-- Membership Level -->
             <label for="membershipLevel">Membership Level:</label>
             <select id="membershipLevel" name="membershipLevel" title="Select your membership level" required>
+                <option value="" disabled selected>Seleccione una opción</option>
                 <option value="NP">NP Membership (Non-Profit)</option>
                 <option value="Bronze">Bronze Membership</option>
                 <option value="Silver">Silver Membership</option>

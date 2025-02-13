@@ -88,6 +88,18 @@ h1,h2,h3,h4,h5,h6 {
     padding: 20px;
 }
 /* Estilos para el formulario */
+select {
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000; /* Asegurar que el texto sea visible */
+}
+option {
+    background-color: #fff; /* Fondo blanco para las opciones */
+    color: #000; /* Texto negro para asegurar visibilidad */
+}
 #joinForm {
     display: flex;
     flex-direction: column;
