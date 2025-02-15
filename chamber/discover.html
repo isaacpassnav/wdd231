@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Piura - Chamber of Commerce</title>
+    <meta name="description" content="Discover Piura with the Chamber of Commerce. Explore local attractions, businesses, and opportunities.">
+    <meta name="author" content="Isaac Pasapera">
+    <meta property="og:url" content="https://isaacpassnav.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:description" content="A directory of businesses and organizations for the Chamber of Commerce project.">
+    <meta property="og:image" content="https://isaacpassnav.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="/images/isaac-pasapera.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- fuente para titulos y subtitulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover.css">
+    
+</head>
+<body>
+    <!-- Header (mismo que tus otras páginas) -->
+    <header>
+        <div class="header-container">
+            <div class="header-img">
+                <a href="index.html">
+                    <img src="images/chamber-commerse.webp" width="90" alt="chamber-img">
+                </a>
+                <h1>Piura</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu"></button>
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="discover-main">
+        <h2>Discover Piura</h2>
+        <p>Explore the beautiful region of Piura with its rich culture, historical sites, and vibrant business community.</p>
+
+        <section class="grid-container">
+            <div class="grid-item">
+                <h2>Cathedral of Piura</h2>
+                <figure>
+                    <img src="images/cathedral.webp" alt="Cathedral of Piura">
+                </figure>
+                <address>Main Square, Piura</address>
+                <p>The Cathedral of Piura is a historical landmark that dates back to the colonial era...</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="grid-item">
+                <h2>Plaza de Armas</h2>
+                <figure>
+                    <img src="images/plaza.webp" alt="Plaza de Armas">
+                </figure>
+                <address>Central Piura</address>
+                <p>The Plaza de Armas is the heart of Piura, featuring beautiful architecture and vibrant activity...</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <!-- Repite esto para los 6 ítems restantes -->
+        </section>
+
+        <aside class="visit-message">
+            <!-- Aquí JS insertará el mensaje del último acceso usando localStorage -->
+        </aside>
+    </main>
+
+    <!-- Footer (mismo que tus otras páginas) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="first-seccion-footer">
+                <p><strong>Piura Chamber of Commerce</strong></p>
+                <p>10 Rue de la Paix</p>
+                <p>Piura, Castilla 989</p>
+                <p><a href="mailto:info@piurachambercommerce.org">info@piurachambercommerce.org</a></p>
+            </div>
+            <nav class="nav-social-media">
+                <div class="conteiner-social-media">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" width="30" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/i/flow/login">
+                        <img src="images/twitter.png" width="30" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram.png" width="30" alt="instagram">
+                    </a>
+                </div>
+            </nav>
+            <div class="personal-info-footer">
+                <p>wdd231 Class Project</p>               
+                <p>Isaac Pasapera</p>
+                <p>&copy; <span id="currentyear"></span> Piura Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>
