@@ -19,11 +19,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover.css"> 
+    <script src="scripts/getTime.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     
+
 </head>
 <body>
-    <!-- Header (mismo que tus otras páginas) -->
     <header>
         <div class="header-container">
             <div class="header-img">
@@ -44,8 +46,6 @@
             </nav>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main class="discover-main">
         <h2>Discover Piura</h2>
         <p>Explore the beautiful region of Piura with its rich culture, historical sites, and vibrant business community.</p>
@@ -60,18 +60,7 @@
                 <p>The Cathedral of Piura is a historical landmark that dates back to the colonial era...</p>
                 <button class="learn-more">Learn More</button>
             </div>
-            <div class="grid-item">
-                <h2>Plaza de Armas</h2>
-                <figure>
-                    <img src="images/plaza.webp" alt="Plaza de Armas">
-                </figure>
-                <address>Central Piura</address>
-                <p>The Plaza de Armas is the heart of Piura, featuring beautiful architecture and vibrant activity...</p>
-                <button class="learn-more">Learn More</button>
-            </div>
-            <!-- Repite esto para los 6 ítems restantes -->
         </section>
-
         <aside class="visit-message">
             <!-- Aquí JS insertará el mensaje del último acceso usando localStorage -->
         </aside>

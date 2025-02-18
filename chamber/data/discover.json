@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Cathedral of Piura",
+      "address": "Main Square, Piura",
+      "description": "The Cathedral of Piura is a historical landmark that dates back to the colonial era. It features beautiful architecture and is a must-see for visitors.",
+      "image": "images/cathedral.webp"
+    },
+    {
+      "title": "Plaza de Armas",
+      "address": "Central Piura",
+      "description": "The Plaza de Armas is the heart of Piura, featuring beautiful architecture and vibrant activity. It's a great place to relax and enjoy the local atmosphere.",
+      "image": "images/plaza.webp"
+    },
+    {
+      "title": "Piura Art Museum",
+      "address": "123 Art Street, Piura",
+      "description": "The Piura Art Museum showcases a diverse collection of art from local and international artists. It's a cultural hub for art enthusiasts.",
+      "image": "images/art-museum.webp"
+    },
+    {
+      "title": "Piura Market",
+      "address": "456 Market Road, Piura",
+      "description": "The Piura Market is a bustling hub of activity where you can find fresh produce, handmade crafts, and local delicacies.",
+      "image": "images/market.webp"
+    },
+    {
+      "title": "University of Piura",
+      "address": "789 University Ave, Piura",
+      "description": "The University of Piura is a prestigious institution offering a variety of programs and degrees. It's known for its beautiful campus and academic excellence.",
+      "image": "images/university.webp"
+    },
+    {
+      "title": "Piura Beach",
+      "address": "123 Beachfront, Piura",
+      "description": "Piura Beach offers stunning views of the ocean and is a popular destination for both locals and tourists. Enjoy sunbathing, swimming, and beach sports.",
+      "image": "images/beach.webp"
+    },
+    {
+      "title": "Piura Shopping Mall",
+      "address": "456 Mall Avenue, Piura",
+      "description": "The Piura Shopping Mall is a modern retail center with a wide range of stores, restaurants, and entertainment options.",
+      "image": "images/mall.webp"
+    },
+    {
+      "title": "Piura Botanical Garden",
+      "address": "789 Garden Street, Piura",
+      "description": "The Piura Botanical Garden is a serene oasis featuring a variety of plant species, walking paths, and picnic areas.",
+      "image": "images/botanical-garden.webp"
+    }
+  ]
+  

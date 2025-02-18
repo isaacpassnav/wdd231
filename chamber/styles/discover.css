@@ -1,205 +1,210 @@
 :root {
-    --primary-color: #0077b6;
-    --secondary-color: #023e8a;
-    --background-color: #f1f5f9;
-    --text-color: #333;
-    --button-color: #0077b6;
-    --button-hover: #023e8a;
-    --card-background: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --border-radius: 8px;
+  --heading-font: "DM Serif Text", serif;
+  --paragraph-font: "Roboto", serif;
+  --primary-color: #0077b6;
+  --secondary-color: #023e8a;
+  --background-color: #f1f5f9;
+  --text-color: #333;
+  --button-color: #0077b6;
+  --button-hover: #023e8a;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
 }
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--paragraph-font);
 }
-h2 {
-    text-align: center;
-    margin: 20px 0;
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--heading-font);
+  text-align: center;
 }
 /* trabajando con header*/
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--heading-background);
-    color: var(--heading-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--card-background);
 }
 .header-img {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .header-img p {
-    margin: 0;
-    padding-top: 10px;
+  margin: 0;
+  padding-top: 10px;
 }
 .nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .nav-ul {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
 }
 .nav-ul li {
-    display: inline;
+  display: inline;
 }
 .nav-ul a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--heading-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--heading-text-color);
 }
 .nav a:hover {
-    text-decoration: underline;
-    color: hwb(64 5% 7%);
+  text-decoration: underline;
+  color: hwb(64 5% 7%);
 }
 #menu {
-    display: none;
-    font-size: 2rem;
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 10;
-    color: #000000;
-    background: none;
-    border: none;
-    position: absolute;
+  display: none;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  color: #000000;
+  background: none;
+  border: none;
+  position: absolute;
 }
-#menu::before{
-    content: "≡";
+#menu::before {
+  content: "≡";
 }
 #menu.show::before {
-    content: "X";
+  content: "X";
 }
 .grid-container {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+/* Estilos para las tarjetas */
+.grid-item {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 15px;
+  text-align: center;
+}
+.grid-item h2 {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+.grid-item figure {
+  margin: 10px 0;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s;
+}
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+.grid-item address {
+  font-style: normal;
+  margin: 10px 0;
+}
+.grid-item p {
+  margin: 10px 0;
+}
+button.learn-more {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button.learn-more:hover {
+  background-color: var(--button-hover);
+}
+/* Layout con Grid Areas para pantallas pequeñas */
+@media screen and (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8";
   }
-  
-  /* Estilos para las tarjetas */
-  .grid-item {
-    background-color: var(--card-background);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px var(--shadow-color);
-    padding: 15px;
-    text-align: center;
+  .grid-item:nth-child(1) {
+    grid-area: item1;
   }
-  
-  .grid-item h2 {
-    margin: 10px 0;
-    color: var(--primary-color);
+  .grid-item:nth-child(2) {
+    grid-area: item2;
   }
-  
-  .grid-item figure {
-    margin: 10px 0;
+  .grid-item:nth-child(3) {
+    grid-area: item3;
   }
-  
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-    transition: transform 0.3s;
+  .grid-item:nth-child(4) {
+    grid-area: item4;
   }
-  
-  .grid-item img:hover {
-    transform: scale(1.05); /* Efecto hover */
+  .grid-item:nth-child(5) {
+    grid-area: item5;
   }
-  
-  .grid-item address {
-    font-style: normal;
-    margin: 10px 0;
+  .grid-item:nth-child(6) {
+    grid-area: item6;
   }
-  
-  .grid-item p {
-    margin: 10px 0;
+  .grid-item:nth-child(7) {
+    grid-area: item7;
   }
-  
-  button.learn-more {
-    background-color: var(--button-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s;
+  .grid-item:nth-child(8) {
+    grid-area: item8;
   }
-  
-  button.learn-more:hover {
-    background-color: var(--button-hover);
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
   }
-  
-  /* Layout con Grid Areas para pantallas pequeñas */
-  @media screen and (max-width: 640px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6"
-        "item7"
-        "item8";
-    }
-    .grid-item:nth-child(1) { grid-area: item1; }
-    .grid-item:nth-child(2) { grid-area: item2; }
-    .grid-item:nth-child(3) { grid-area: item3; }
-    .grid-item:nth-child(4) { grid-area: item4; }
-    .grid-item:nth-child(5) { grid-area: item5; }
-    .grid-item:nth-child(6) { grid-area: item6; }
-    .grid-item:nth-child(7) { grid-area: item7; }
-    .grid-item:nth-child(8) { grid-area: item8; }
+}
+@media screen and (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "item1 item2 item3 item4"
+      "item5 item6 item7 item8";
   }
-  
-  /* Grid para pantallas medianas */
-  @media screen and (min-width: 641px) and (max-width: 1024px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:
-        "item1 item2"
-        "item3 item4"
-        "item5 item6"
-        "item7 item8";
-    }
-  }
-  
-  /* Grid para pantallas grandes */
-  @media screen and (min-width: 1025px) {
-    .grid-container {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-        "item1 item2 item3 item4"
-        "item5 item6 item7 item8";
-    }
-  }
-  /* trabajando con footer*/
+}
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--heading-background);
-    color: var(--heading-text-color)
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--card-background);
 }
-.first-seccion-footer, .nav-social-media, .personal-info-footer {
-    flex: 1;
-    text-align: center;
+.first-seccion-footer,
+.nav-social-media,
+.personal-info-footer {
+  flex: 1;
+  text-align: center;
 }
-.first-seccion-footer a{
-    color: var(--heading-text-color)
+.first-seccion-footer a {
+  color: var(--heading-text-color);
 }
 .nav-social-media .container-social-media {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .nav-social-media a {
-    display: inline-block;
+  display: inline-block;
 }
