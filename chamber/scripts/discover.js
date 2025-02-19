@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         localStorage.setItem("lastVisit", currentDate);
     }
-
     renderDiscoverCards();
     displayLastVisitMessage();
 });

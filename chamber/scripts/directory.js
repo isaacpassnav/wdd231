@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             )
             .join("");
     }
-     // Obtener datos y renderizar la vista predeterminada
      const members = await fetchMembers();
      renderGridView(members);
  
