@@ -45,6 +45,15 @@
         flex-direction: column; 
         gap: 20px;
     }
+    .information-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .information-grid > div {
+        width: 100%;
+    }
     section {
         width: 100%;
         padding: 10px;

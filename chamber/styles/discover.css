@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 :root {
   --heading-font: "DM Serif Text", serif;
   --paragraph-font: "Roboto", serif;
@@ -82,6 +86,12 @@ h1,h2,h3,h4,h5,h6 {
   display: grid;
   gap: 20px;
   padding: 20px;
+}
+.discover-main p {
+  text-align: center;
+}
+.visit-message {
+  text-align: center;
 }
 /* Estilos para las tarjetas */
 .grid-item {
