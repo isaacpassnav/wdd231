@@ -13,6 +13,9 @@
         z-index: 5;
         background-color: #000000;
     }
+    .header-img p{
+        padding-top: 20px;
+    }
     .nav.show{
         display: flex;
     }

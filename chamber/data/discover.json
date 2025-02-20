@@ -3,49 +3,49 @@
       "title": "Cathedral of Lima",
       "address": "Main Square, Lima",
       "description": "The Cathedral of Lima is a historical landmark that dates back to the colonial era. It features beautiful architecture and is a must-see for visitors.",
-      "image": "images/catedral_lima.webp"
+      "image": "/images/catedral_lima.webp"
     },
     {
       "title": "Plaza de Armas",
       "address": "Central Lima",
       "description": "The Plaza de Armas is the heart of Lima, featuring beautiful architecture and vibrant activity. It's a great place to relax and enjoy the local atmosphere.",
-      "image": "images/plaza_de_armas.webp"
+      "image": "/images/plaza_de_armas.webp"
     },
     {
       "title": "Ancash Archaeological Museum",
       "address": "123 Art Street, Huaraz",
       "description": "The Ancash Archaeological Museum showcases a diverse collection of art from local and international artists. It's a cultural hub for art enthusiasts.",
-      "image": "images/archaeological_museum.webp"
+      "image": "/images/archaeological_museum.webp"
     },
     {
       "title": "Naciente del Tio Yacu",
       "address": "456 Market Road, Tarapoto",
       "description": "The Naciente del Tio Yacu is a beautifull place to spend a morning with the family. It is the source of a river with crystal-clear, transparent waters and a gentle, shallow flow that makes it easy to swim in.",
-      "image": "images/tio_yacu.webp"
+      "image": "/images/tio_yacu.webp"
     },
     {
       "title": "University of Chiclayo",
       "address": "789 University Ave, Chiclayo",
       "description": "The University of Chiclayo is a prestigious institution offering a variety of programs and degrees. It's known for its beautiful campus and academic excellence.",
-      "image": "images/University_chiclayo.webp"
+      "image": "/images/University_chiclayo.webp"
     },
     {
       "title": "Piura Beach",
       "address": "123 Beachfront, Piura",
       "description": "Piura Beach offers stunning views of the ocean and is a popular destination for both locals and tourists. Enjoy sunbathing, swimming, and beach sports.",
-      "image": "images/piura_beach.webp"
+      "image": "/images/piura_beach.webp"
     },
     {
       "title": "Lima Shopping Mall",
       "address": "456 Mall Avenue, Piura",
       "description": "The Lima Shopping Mall is a modern retail center with a wide range of stores, restaurants, and entertainment options.",
-      "image": "images/lima_mall.webp"
+      "image": "/images/lima_mall.webp"
     },
     {
       "title": "Trujillo Botanical Garden",
       "address": "789 Garden Street, Trujillo",
       "description": "The Trujillo Botanical Garden is a serene oasis featuring a variety of plant species, walking paths, and picnic areas.",
-      "image": "images/trujillo_garden.webp"
+      "image": "/images/trujillo_garden.webp"
     }
   ]
   
